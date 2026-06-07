@@ -1,0 +1,29 @@
+{
+  "source": {
+    "include": ["web-app/Module.js"],
+    "includePattern": ".+\\.js$",
+    "excludePattern": "(node_modules|docs)"
+  },
+  "opts": {
+    "destination": "./docs/",
+    "recurse": true,
+    "verbose": true
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false,
+    "default": {
+      "outputSourceFiles": true
+    }
+  },
+  "template": "node_modules/docdash",
+  "docdash": {
+    "static": true,
+    "sort": true,
+    "typedefs": true,
+    "removeQuotes": "none",
+    "scripts": [],
+    "menu": {}
+  }
+}
